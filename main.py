@@ -36,9 +36,10 @@ while True:
 
             # Get the coordinates of the first landmark (wrist)
             wrist_x, wrist_y = int(detected_hand.landmark[0].x * frame_width), int(detected_hand.landmark[0].y * frame_height)
-
+    
             # Print the coordinates of the wrist
-            print("Hand ID:", 0, "Wrist X:", wrist_x, "Wrist Y:", wrist_y)  # Print the coordinates of the wrist
+            print("Hand ID:", 0, "Wrist X:", wrist_x, "Wrist Y:", wrist_y)
+            print("Made by KieranMc")
 
             # Draw a circle at the wrist
             cv2.circle(frame, (wrist_x, wrist_y), 10, (0, 255, 0), cv2.FILLED)  # Draw a circle at the wrist
